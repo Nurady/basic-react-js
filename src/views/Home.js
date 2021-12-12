@@ -6,7 +6,8 @@ import {Theme} from '../store';
 
 function Home() {
     const [currentTheme, setCurrentTheme] = useRecoilState(Theme)
-    const defaultTheme = currentTheme == 'dark' ? 'bg-dark text-white' : 'bg-success text-white'
+    // eslint-disable-next-line no-unused-vars
+    const defaultTheme = currentTheme === 'dark' ? 'bg-dark text-white' : 'bg-success text-white'
 
     return (
         <div className="container">

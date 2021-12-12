@@ -6,6 +6,14 @@ const Theme = atom({
     default: 'dark'
 })
 
+const Authenticated =  atom({
+    key: 'authenticated',
+    default: {
+        check: false,
+        user: {name: 'adis'}
+    }
+})
+
 
 const AuthUser = selector({
     key: 'auth-user',
@@ -25,5 +33,6 @@ const AuthUser = selector({
 
 export {
     AuthUser,
-    Theme
+    Theme,
+    Authenticated
 }
